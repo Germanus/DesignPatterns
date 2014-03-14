@@ -1,4 +1,4 @@
-package my.ilya.template.method;
+package my.ilya.templatemethod;
 
 import java.util.ArrayList;
 import java.util.Iterator;
