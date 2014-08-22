@@ -10,4 +10,20 @@ target
 *.iws
 *.log
 .checkstyle
-/webapp/src/main/resources/env/dev/contingent/spring/db-connection.properties
+
+# Eclipse
+.classpath
+.project
+.settings/
+
+# Intellij
+.idea/
+*.iml
+*.iws
+
+# Mac
+.DS_Store
+
+# Maven
+log/
+target/
