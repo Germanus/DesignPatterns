@@ -3,7 +3,6 @@ package my.ilya.proxy.datacreator;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.Iterator;
-import java.util.List;
 
 public class AddressBookImpl implements AddressBook{
 	

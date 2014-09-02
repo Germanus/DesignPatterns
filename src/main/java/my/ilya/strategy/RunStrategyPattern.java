@@ -3,10 +3,11 @@ package my.ilya.strategy;
 /**
  * @author Kazakevich Ilya
  */
-// Тестовое приложение
+
 class RunStrategyPattern {
 
-    public static void main(String[] args) {
+    @SuppressWarnings("unused")
+	public static void main(String[] args) {
 
         Context context = new Context();
 

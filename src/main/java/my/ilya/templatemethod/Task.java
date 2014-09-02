@@ -7,7 +7,9 @@ import java.util.Iterator;
  * @author Kazakevich Ilya
  */
 class Task extends ProjectItem {
-    private ArrayList projectItems = new ArrayList();
+    
+	private static final long serialVersionUID = -7279027930376764305L;
+	private ArrayList<ProjectItem> projectItems = new ArrayList<ProjectItem>();
     private double taskTimeRequired;
 
     public Task() {
@@ -36,13 +38,13 @@ class Task extends ProjectItem {
         return taskTimeRequired;
     }
 
-    public Iterator getProjectItemIterator() {
+    public Iterator<ProjectItem> getProjectItemIterator() {
         return projectItems.iterator();
     }
 
     public double getMaterialsCost() {
         double totalCost = 0;
-        Iterator items = getProjectItemIterator();
+        Iterator<ProjectItem> items = getProjectItemIterator();
         while (items.hasNext()) {
             totalCost += ((ProjectItem) items.next()).getMaterialsCost();
         }
@@ -51,7 +53,7 @@ class Task extends ProjectItem {
 
     public double getTimeRequired() {
         double totalTime = taskTimeRequired;
-        Iterator items = getProjectItemIterator();
+        Iterator<ProjectItem> items = getProjectItemIterator();
         while (items.hasNext()) {
             totalTime += ((ProjectItem) items.next()).getTimeRequired();
         }

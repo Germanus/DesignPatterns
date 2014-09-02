@@ -3,8 +3,10 @@ package my.ilya.templatemethod;
 /**
  * @author Kazakevich Ilya
  */
-class Deliverable extends ProjectItem{
-    private double materialsCost;
+class Deliverable extends ProjectItem {
+   
+	private static final long serialVersionUID = 1L;
+	private double materialsCost;
     private double productionTime;
 
     public Deliverable(){ }

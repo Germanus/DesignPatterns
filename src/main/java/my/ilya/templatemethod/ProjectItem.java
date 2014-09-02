@@ -6,7 +6,9 @@ import java.io.Serializable;
  * @author Kazakevich Ilya
  */
 abstract class ProjectItem implements Serializable {
-    private String name;
+   
+	private static final long serialVersionUID = 3965004688945660437L;
+	private String name;
     private String description;
     private double rate;
 
