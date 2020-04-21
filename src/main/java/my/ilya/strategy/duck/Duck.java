@@ -1,8 +1,5 @@
 package my.ilya.strategy.duck;
 
-import my.ilya.strategy.duck.FlyBehavior;
-import my.ilya.strategy.duck.QuackBehavior;
-
 public abstract class Duck {
 	
     private FlyBehavior flyBehavior;
@@ -26,5 +23,13 @@ public abstract class Duck {
     
     public void setQuackBehavior(QuackBehavior quackBehavior){
         this.quackBehavior = quackBehavior;
+    }
+
+    public FlyBehavior getFlyBehavior() {
+        return flyBehavior;
+    }
+
+    public QuackBehavior getQuackBehavior() {
+        return quackBehavior;
     }
 }
